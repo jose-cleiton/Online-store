@@ -1,46 +1,38 @@
-# Getting Started with Create React App
+  # Requisitos Obrigatórios
+    - [1. Implemente o módulo de acesso à api do Mercado Livre]
+    - [2. Crie uma página de listagem de produtos vazia]
+    - [3. Crie a página do carrinho de compras]
+    - [4. Liste as categorias de produtos disponíveis via API na página principal]
+    - [5. Liste os produtos buscados por termos, com os dados resumidos, associados a esses termos]
+    - [6. Selecione uma categoria e mostre somente os produtos daquela categoria]
+    - [7. Redirecione para uma tela com a exibição detalhada ao clicar na exibição resumida de um produto]
+    - [8. Adicione produtos a partir da tela de listagem de produtos]
+    - [9. Adicione um produto ao carrinho a partir de sua tela de exibição detalhada]
+    - [10. Visualize a lista de produtos adicionados ao carrinho em sua página e permita a manipulação da sua quantidade]
+    - [11. Avalie e comente acerca de um produto em sua tela de exibição detalhada]
+    - [12. Finalize a compra vendo um resumo dela, preenchendo os seus dados e escolhendo a forma de pagamento]
+   # Requisitos Bônus
+    - [13. Mostre junto ao ícone do carrinho a quantidade de produtos dentro dele, em todas as telas em que ele aparece]
+    - [14. Limite a quantidade de produtos adicionados ao carrinho pela quantidade disponível em estoque]
+    - [15. Mostre quais produtos tem o frete grátis]
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+   # Requisitos Extras Não Avaliativos
+    - [16. Faça um layout para o site]
+    - [17. Faça um layout responsivo para o site]
+    - [18. Crie um seletor dropdown para ordenar a lista de produto por maior e menor preço]
+    - [19. Coloque uma animação no carrinho para quando um produto for adicionado]
+    - [20. Crie um slider lateral para exibir o carrinho na tela principal]
+    - [21. Destaque, na tela principal, os produtos já adicionados ao carrinho]
+    - [22. Impeça que a quantidade do produto seja negativa]
+- [Depois de terminar o desenvolvimento (opcional)]
+- [Revisando um pull request]
+- [Avisos finais]
 
-## Available Scripts
+# Habilidades
 
-In the project directory, you can run:
+Nesse projeto, você será capaz de:
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+* Entender o que são Métodos Ágeis
+* Entender o que é Kanban
+* Entender o que é Scrum
+* Trabalhar  utilizando Kanban ou Scrum de maneira eficaz
