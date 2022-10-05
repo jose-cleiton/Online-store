@@ -1,9 +1,10 @@
 import { Routes, Route , Navigate} from "react-router-dom";
-import { About } from "../shared/components/About";
-import { Contact } from "../shared/components/Contact";
-import { Home } from "../shared/components/Home";
+import { About } from "../shared/components";
+import { Contact } from "../shared/components";
+import { Home } from "../shared/components";
 
-export const AppRoutes = () => {
+export const AppRoutes = () => 
+{
     return (
         <Routes>
             <Route path="/" element={<Home/>}/>
