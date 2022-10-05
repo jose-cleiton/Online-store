@@ -1,21 +1,8 @@
 import { useFatch } from '../hooks/useFatch';
-import { IResults } from '../../interfaces/interfaces';
+import { IRepository} from '../../interfaces/interfaces';
+import Frontend from '../../templates/Frontend';
 
-type IRepository = 
-{
-    site_id: string;
-    country_default_time_zone: string;
-    query:string;
-    paging: 
-    {
-        total: number;
-        primary_results: number;
-        offset: number;
-        limit: number;
-    };
-    results: Array<IResults>
 
-}
      
    
   
@@ -25,9 +12,11 @@ type IRepository =
 const Home = () => {
     const { data, error } = useFatch<IRepository>(URL)
 
-
+        
     
     return (
+        <>
+       <Frontend>
         <ul>
             {
                 data?.results.map((item) => 
@@ -42,7 +31,11 @@ const Home = () => {
                 })
             }
         </ul>
-    )
+        </Frontend>
+        
+      </>
+  
+     )
 
 }
 

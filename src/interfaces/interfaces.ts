@@ -15,6 +15,24 @@ export  interface IResults {
   thumbnail: string;
 
 }
+export  type IRepository ={
+    site_id: string;
+    country_default_time_zone: string;
+    query:string;
+    paging: 
+    {
+        total: number;
+        primary_results: number;
+        offset: number;
+        limit: number;
+    };
+    results: Array<IResults>
+
+}
+ export interface FrontendProps 
+{
+    children: React.ReactNode;
+}
 
 
 
