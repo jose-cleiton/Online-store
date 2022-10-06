@@ -2,24 +2,28 @@
 import axios from 'axios';
 import { useQuery } from 'react-query';
 import { IRepository } from '../../interfaces/interfaces';
+import { getCategories } from '../../services/api';
+
 
      
    
   
   const URL ="https://api.mercadolibre.com/sites/MLB/search?category=MLB1055&q=Motorola" 
+ 
 
-  
   const Home = () => {
       
-        const { data, isLoading, error } = useQuery<IRepository>('products', 
+        const { data } = useQuery<IRepository>('products', 
         async () =>
         {
             const response = await axios.get(URL)
             return response.data
         });
-  
-        console.log(data);
         
+       
+        
+   
+          
     
     return (
         
