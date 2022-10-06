@@ -16,6 +16,8 @@ export  interface IResults {
 
 }
 export  type IRepository ={
+  id: string;
+  name:string;
     site_id: string;
     country_default_time_zone: string;
     query:string;
