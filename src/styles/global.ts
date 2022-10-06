@@ -6,10 +6,16 @@ html, body, #root
 {
   height: 100%;
  
+  
+ 
+}
+main{
+  padding-top: 45px;
 }
 body 
 {
   background: #f8fdff;
+  
 }
 * 
 {

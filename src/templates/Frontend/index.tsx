@@ -7,8 +7,8 @@ const Frontend = ({children}:FrontendProps) =>
 {
     return (
         <>
-        <S.Container>
             <Header/>
+        <S.Container>
             {children}
 
         </S.Container>

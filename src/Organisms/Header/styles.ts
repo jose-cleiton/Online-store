@@ -3,10 +3,18 @@ import styled from "styled-components";
 
 export const Box = styled.header`
 
-margin-top: 30px;
-height: 42px;
+margin-top: 0px;
+margin-bottom: 30px;
 display: flex;
 flex-direction: row;
 justify-content: space-between;
+position: fixed;
+background-color: #fee600;
+padding: 0px 40px;
+height: 50px;
+width: 100%;
+
+
+
 
 `;
