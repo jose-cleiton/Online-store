@@ -16,6 +16,9 @@ export  interface IResults {
 
 }
 export  type IRepository ={
+  price:number;
+  title: string | undefined;
+  thumbnail: string | undefined;
   id: string;
   name:string;
     site_id: string;

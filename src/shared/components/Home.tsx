@@ -1,6 +1,7 @@
 
 import axios from 'axios';
 import { useQuery } from 'react-query';
+import { IRepository } from '../../interfaces/interfaces';
 
      
    
@@ -10,13 +11,15 @@ import { useQuery } from 'react-query';
   
   const Home = () => {
       
-        const { data, isLoading, error } = useQuery('products', 
+        const { data, isLoading, error } = useQuery<IRepository>('products', 
         async () =>
         {
             const response = await axios.get(URL)
             return response.data
         });
   
+        console.log(data);
+        
     
     return (
         
@@ -26,8 +29,8 @@ import { useQuery } from 'react-query';
             {
                 return (
                     <li key={product.id}>
+                        <h1>{product.title}</h1>
                         <img src={product.thumbnail} alt={product.title}/>
-                        <p>{product.title}</p>
                         <p>{product.price}</p>
                     </li>
                 )
