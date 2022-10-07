@@ -70,7 +70,7 @@ aside > ul{
 aside > h1 {
   text-align: center;
   color: #fff;
-  font-size: 2rem;
+  font-size: ;
 
 
 }
