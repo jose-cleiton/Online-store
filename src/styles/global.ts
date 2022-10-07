@@ -6,7 +6,7 @@ html, body, #root
 {
   margin: 0;
   padding: 0;
-  background: #7159c1;
+ 
   box-sizing: border-box;
  
   

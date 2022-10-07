@@ -2,6 +2,7 @@
 import axios from 'axios';
 import { useQuery } from 'react-query';
 import { IRepository } from '../../interfaces/interfaces';
+import { Container } from '../../templates/Container/styles';
 
 
 
@@ -27,7 +28,19 @@ import { IRepository } from '../../interfaces/interfaces';
     
     return (
         
-     <h1></h1>
+     <main>
+            <ul>
+                {data?.results.map((product) => {
+                    return (
+                        <li key={product.id}>
+                            <img src={product.thumbnail} alt={product.title} />
+                            <p>{product.title}</p>
+                            <p>{product.price}</p>
+                        </li>
+                    )
+                })}
+            </ul>
+     </main>
          
       
       
