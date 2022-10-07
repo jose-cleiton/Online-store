@@ -2,7 +2,8 @@
 import axios from 'axios';
 import { useQuery } from 'react-query';
 import { IRepository } from '../../interfaces/interfaces';
-import { getCategories } from '../../services/api';
+
+import Main from './organisms/Main';
 
 
      
@@ -27,24 +28,9 @@ import { getCategories } from '../../services/api';
     
     return (
         
-       <ul>
-        {
-        data?.results.map((product) => 
-            {
-                return (
-                    <li key={product.id}>
-                        <h1>{product.title}</h1>
-                        <img src={product.thumbnail} alt={product.title}/>
-                        <p>{product.price}</p>
-                    </li>
-                )
+      <Main/>
 
-            }
-        )
-        }
-
-
-       </ul>
+      
       
   
      )

@@ -8,6 +8,7 @@ margin-bottom: 30px;
 display: flex;
 flex-direction: row;
 justify-content: space-between;
+align-items: center;
 position: fixed;
 background-color: #fee600;
 padding: 0px 40px;
