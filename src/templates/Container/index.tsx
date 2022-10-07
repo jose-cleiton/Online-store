@@ -1,5 +1,6 @@
 import { FrontendProps } from "../../interfaces/interfaces";
 import Header from "../../Organisms/Header";
+import { Category } from "../../shared/components/Category";
 import * as S from './styles';
 
 
@@ -10,12 +11,14 @@ const Container = ({children}:FrontendProps) =>
             
         <S.Container>
             <header>
-                <Header></Header>
+                <Header/>
             </header>
-            <main>
+            <main>                
                 {children}
             </main>
-            <aside></aside>
+            <aside>
+                <Category/>
+            </aside>
             <footer></footer>
             
 

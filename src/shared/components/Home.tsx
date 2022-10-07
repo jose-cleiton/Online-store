@@ -2,7 +2,6 @@
 import axios from 'axios';
 import { useQuery } from 'react-query';
 import { IRepository } from '../../interfaces/interfaces';
-import { Container } from '../../templates/Container/styles';
 
 
 
@@ -28,7 +27,7 @@ import { Container } from '../../templates/Container/styles';
     
     return (
         
-     <main>
+     <>
             <ul>
                 {data?.results.map((product) => {
                     return (
@@ -40,7 +39,7 @@ import { Container } from '../../templates/Container/styles';
                     )
                 })}
             </ul>
-     </main>
+     </>
          
       
       
