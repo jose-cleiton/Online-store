@@ -3,7 +3,6 @@ import axios from 'axios';
 import { useQuery } from 'react-query';
 import { IRepository } from '../../interfaces/interfaces';
 
-import Main from './organisms/Main';
 
 
      
@@ -28,8 +27,8 @@ import Main from './organisms/Main';
     
     return (
         
-      <Main/>
-
+     <h1></h1>
+         
       
       
   

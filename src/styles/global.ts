@@ -4,19 +4,18 @@ const GlobalStyle = createGlobalStyle
 `
 html, body, #root  
 {
-  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #7159c1;
+  box-sizing: border-box;
  
   
  
 }
-main{
-  padding-top: 45px;
-}
-body 
-{
-  background: #f8fdff;
-  
-}
+
+
+
+
 * 
 {
   padding: 0;
@@ -36,6 +35,8 @@ a
   text-decoration: none;
   outline: none;
 }
+
+
 
 `;
 
