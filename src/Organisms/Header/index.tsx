@@ -1,6 +1,6 @@
 import Button from '../../shared/components/atomos/Button';
 import Logo from '../../shared/components/molecules/Logo';
-import Menu from '../../shared/components/organisms/Menu';
+import {SearchBar} from '../../shared/components/atomos/SearchBar';
 import * as S from './styles';
 
 
@@ -11,7 +11,7 @@ const Header = () =>
 
     <S.Box>
       <Logo/>
-      <Menu/>
+      <SearchBar/>
      <Button/>
     </S.Box>
   

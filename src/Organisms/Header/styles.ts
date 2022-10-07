@@ -7,7 +7,7 @@ margin-top: 0px;
 margin-bottom: 30px;
 display: flex;
 flex-direction: row;
-justify-content: space-between;
+justify-content: space-around;
 align-items: center;
 position: fixed;
 background-color: #fee600;

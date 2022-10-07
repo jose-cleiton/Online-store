@@ -5,7 +5,7 @@ export const Container = styled.main`
 
 display: grid;
 grid-template-columns: 1fr 4fr;
-grid-template-rows: 20vh 70vh 10vh;
+grid-template-rows: 15vh 75vh 10vh;
 grid-template-areas: "h h" 
                      "a m" 
                      "f f";
@@ -14,8 +14,19 @@ grid-template-areas: "h h"
 
 header{
   background: #fee600;
+  display: flex;
+  align-items: center;
   
   grid-area: h;
+}
+
+header input {
+  width: 600px;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  margin: 10px 0;
+
 }
 
 main {
@@ -70,7 +81,7 @@ aside > ul{
 aside > h1 {
   text-align: center;
   color: #fff;
-  font-size: ;
+ 
 
 
 }
