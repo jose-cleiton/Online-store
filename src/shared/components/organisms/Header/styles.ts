@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const Box = styled.header`
 
-background: #fee600;
+background: #FFF159;
   display: flex;
   align-items: center;
   justify-content: space-evenly;

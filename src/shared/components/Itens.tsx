@@ -1,8 +1,7 @@
 
 import axios from 'axios';
 import { useQuery } from 'react-query';
-import { IQueriedRepositories, IRepository } from '../../interfaces/interfaces';
-import { Main } from './organisms/Main/styles';
+import { IQueriedRepositories } from '../../interfaces/interfaces';
 
 
      
@@ -35,8 +34,9 @@ import { Main } from './organisms/Main/styles';
                     return (
                         <li key={repository.id}>
                             <strong>{repository.title}</strong>
-                            <p>{repository.price}</p>
-                            <p>{repository.thumbnail}</p>
+                            <p>R${repository.price}</p>
+                            <img src={repository.thumbnail} alt={repository.title}/>
+                          
                         </li>
                     )
                 }

@@ -1,10 +1,10 @@
-import Itens from '../../Itens';
+import Cards from '../../molecules/Cards/index';
 import * as S from './styles';
 
 const Main = () => 
 (
     <S.Main>
-        <Itens/>
+        <Cards/>
     </S.Main>
 
 )
