@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const Aside = styled.aside`
 
-background: red;
+background: #FFF;
   overflow: hidden;
   overflow-y: scroll;
   
@@ -12,7 +12,7 @@ background: red;
 
  h1 {
 text-align: center;
-color: #fff;
+color: black;
 
 
 
