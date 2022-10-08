@@ -12,7 +12,15 @@ export async function getCategories() {
 }
 
 export async function getProductsFromCategoryAndQuery(categoryId, query) {
+  const URL = `https://api.mercadolibre.com/sites/MLB/search?category=${categoryId}&q=${query}`
   const headers = { Authorization: 'Bearer $ACCESS_TOKEN', method: 'GET' };
-  const response = await axios.get(`https://api.mercadolibre.com/sites/${categoryId}/search?q=$${query}`, headers);
+  const response = await axios.get(URL, headers);
+  return response.data;
+}
+
+export async function getProductsFromQuery(query) {
+  const URL = `https://api.mercadolibre.com/sites/MLB/search?q=${query}`
+  const headers = { Authorization: 'Bearer $ACCESS_TOKEN', method: 'GET' };
+  const response = await axios.get(URL, headers);
   return response.data;
 }

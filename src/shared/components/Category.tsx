@@ -15,6 +15,8 @@ export const Category = () =>
   } 
   )
    return (
+         <>
+            <h1>Category</h1>
 
     <ul>
       { isFetching && <h1>Carregando...</h1>}
@@ -30,6 +32,7 @@ export const Category = () =>
             })
       }
     </ul>
+       </>
 
    );
 }

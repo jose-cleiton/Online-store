@@ -1,4 +1,4 @@
-import Home from './Home';
+import Itens from './Itens';
 import Contact from './Contact';
 import About from './About';
 
@@ -6,7 +6,7 @@ import About from './About';
 export 
 {
    
-    Home,
+    Itens,
     Contact,
     About
 

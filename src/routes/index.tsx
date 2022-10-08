@@ -1,14 +1,13 @@
 import { Navigate, Route, Routes } from "react-router-dom";
-import { Contact, Home } from "../shared/components";
 import { Category } from "../shared/components/Category";
+import Section from "../shared/components/templates/Section";
 
 export const AppRoutes = () => 
 {
     return (
         <Routes>
-            <Route path="/" element={<Home/>}/>
-            <Route path="/category" element={<Category/>}/>
-            <Route path="/contact" element={<Contact/>}/>
+            <Route path="/" element={<Section children={undefined}/>}/>
+            <Route path="/cart" element={<Category/>}/>
             <Route path="*" element={<Navigate to="/" replace={true}/>}/>
         </Routes>
     );
