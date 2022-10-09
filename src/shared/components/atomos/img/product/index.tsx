@@ -10,10 +10,15 @@ interface IProducts {
 
 const Products = (props: any) => 
 (
-<S.Div>    
-      <S.Img src={props.url} alt={props.title} title={props.title}/>
+<S.Div>  
+   <header>
+      <img src={props.url} alt={props.title} title={props.title}/>
+
+   </header>
     
-    <div className='info'>
+   
+    
+    <main>
         <div>
             <h2>{props.title}</h2>
         </div>
@@ -21,7 +26,7 @@ const Products = (props: any) =>
             <p>R$ {props.value}</p>
             <p>Frete grátis #full</p>
         </div>
-    </div>
+    </main>
 </S.Div>
 
 

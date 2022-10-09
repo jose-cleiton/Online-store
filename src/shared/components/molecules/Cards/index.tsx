@@ -4,7 +4,7 @@ import { IQueriedRepositories } from '../../../../interfaces/interfaces';
 
 import Products from '../../atomos/img/product';
 import * as S from './styles';
-const query = 'notbooks';
+const query = 'brinquedos';
   
 const URL =`https://api.mercadolibre.com/sites/MLB/search?q=${query}`;
 
@@ -19,6 +19,8 @@ const { data } = useQuery<IQueriedRepositories>('products',
 return (
     <S.Cards>  
         <ul>
+           
+         
             {data?.results.map((repository) => {
                 return (
                     <li key={repository.id}>
