@@ -4,7 +4,7 @@ import { IQueriedRepositories } from '../../../../interfaces/interfaces';
 
 import Products from '../../atomos/img/product';
 import * as S from './styles';
-const query = 'brinquedos';
+const query = 'celular';
   
 const URL =`https://api.mercadolibre.com/sites/MLB/search?q=${query}`;
 
