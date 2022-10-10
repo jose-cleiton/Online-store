@@ -3,9 +3,9 @@ import * as S from './styles';
 
 const Main = () => 
 (
-    <S.Main>
+    <S.MainCards>
         <Cards/>
-    </S.Main>
+    </S.MainCards>
 
 )
 
