@@ -19,11 +19,11 @@ const Products = (props: any) =>
    
     
     <main>
-        <div>
+        <div className="title">
             <h2>{props.title}</h2>
         </div>
         <div>
-            <p>R$ {props.value}</p>
+            <span className="value">R$ {props.value}</span>
             <p>Frete grátis #full</p>
         </div>
     </main>
