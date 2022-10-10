@@ -6,7 +6,7 @@ export const MainCards = styled.main`
   overflow: hidden;
   overflow-y: scroll;
   grid-area: m;
-  background-color: #fff;
+  background-color: #ededed;
   
  
 h1 {

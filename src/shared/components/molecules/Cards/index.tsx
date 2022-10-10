@@ -2,7 +2,7 @@ import axios from 'axios';
 import { useQuery } from 'react-query';
 import { IQueriedRepositories } from '../../../../interfaces/interfaces';
 
-import Products from '../../atomos/img/product';
+import Products from '../../product';
 import * as S from './styles';
 const query = 'celular';
   
