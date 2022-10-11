@@ -1,12 +1,14 @@
 import { useQuery } from "react-query"
-import { getCategories } from "../../services/api"
+import { getCategories } from "../../../services/api";
+import { Link } from 'react-router-dom';
+
 
 interface  ICategory {
     id: string;
     name: string;
 }
 
-export const Category = () => 
+ const Category = () => 
 {
   const {data,  isFetching} = useQuery('category',  () => 
   {
@@ -26,7 +28,7 @@ export const Category = () =>
                 return (
                     <li key={category.id}>
                         <p>{category.id}</p>
-                        <h2>{category.name}</h2>
+                       <Link to={`/category/${category.id}`}>{category.name}</Link>
                     </li>
                 )
             })
@@ -36,3 +38,5 @@ export const Category = () =>
 
    );
 }
+
+export default Category;

@@ -264,4 +264,8 @@ available_filters: [
 
 }
 
+export interface  ICategory {
+    id: string;
+    name: string;
+}
 
