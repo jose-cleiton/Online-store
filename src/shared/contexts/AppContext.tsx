@@ -1,7 +1,7 @@
 // ./src/context/AppContext.js
 import { createContext } from 'react';
-import { AppContextInterface } from '../../interfaces/interfaces';
+import { Input } from '../../interfaces/interfaces';
 
-const AppContext = createContext<AppContextInterface | null>(null);
+const AppContext = createContext<Input | null>(null);
 
 export default AppContext;

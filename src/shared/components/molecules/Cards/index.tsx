@@ -12,8 +12,8 @@ const Cards = () => {
 
     const { data } = useQuery<IQueriedRepositories>('products', async () =>
     {
-        const response = await axios.get(URL)
-        return response.data
+        const {data} = await axios.get(URL)
+        return data
     });
 
 
