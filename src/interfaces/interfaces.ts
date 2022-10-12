@@ -269,3 +269,7 @@ export interface  ICategory {
     name: string;
 }
 
+export interface AppContextInterface {
+   input: string;
+    setInput: (input: string) => void;
+  }

@@ -1,14 +1,21 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { AppContextInterface } from "../../../../interfaces/interfaces";
+import AppContext from "../../../contexts/AppContext";
+
+
 
 
 export const  SearchBar  = () => {
 
-  const  [search, setSearch]  = useState<string>('');
+  const { input, setInput } = useContext(AppContext) as AppContextInterface;
+
+
 
   const  handleChange  = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setSearch(e.target.value);
+    setInput(e.target.value);
   };
 
+ 
  
 
   return (
@@ -17,7 +24,7 @@ export const  SearchBar  = () => {
         type="text"
         className="search-bar__input"
         placeholder="Search"
-        value={search}
+        value={input}
         onChange={handleChange}
       />
     </div>

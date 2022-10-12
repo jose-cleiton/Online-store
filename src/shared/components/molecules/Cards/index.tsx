@@ -9,12 +9,18 @@ const query = 'brinquedo';
 const URL =`https://api.mercadolibre.com/sites/MLB/search?q=${query}`;
 
 const Cards = () => {
-const { data } = useQuery<IQueriedRepositories>('products', 
-        async () =>
-        {
-            const response = await axios.get(URL)
-            return response.data
-        });
+
+    const { data } = useQuery<IQueriedRepositories>('products', async () =>
+    {
+        const response = await axios.get(URL)
+        return response.data
+    });
+
+
+
+
+
+
 
 return (
     <S.Cards>  
