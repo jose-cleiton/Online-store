@@ -3,13 +3,14 @@ import ReactDOM from 'react-dom';
 import { QueryClientProvider } from 'react-query';
 
 import {App} from './App';
-import Provider from './shared/contexts/Provider';
+
 import { queryClient } from './shared/services/queryClient';
 import GlobalStyle from './styles/global';
+import { UserContextProvider } from './shared/contexts/Provider';
 
 ReactDOM.render(
   <React.StrictMode>
-  <Provider>
+  <UserContextProvider>
 
 
     <QueryClientProvider client={queryClient}>
@@ -18,7 +19,7 @@ ReactDOM.render(
 
     <App />
     </QueryClientProvider>
-  </Provider>
+  </UserContextProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

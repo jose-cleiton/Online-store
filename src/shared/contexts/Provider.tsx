@@ -1,27 +1,24 @@
 // ./src/context/Provider.js
-import { useState } from 'react';
-import { Input } from '../../interfaces/interfaces';
-import AppContext from './AppContext';
 
-function Provider({ children }) {
-  const [input, setInput] = useState("");
+import { useState } from "react";
+import { initialState, UserContextProps } from "../../interfaces/interfaces";
+import { UseContext } from "./AppContext";
 
-  const contextValue: Input = {
-    input,
-    setInput,
-  };
+
+export const UserContextProvider = ({ children }:UserContextProps) => {
+ 
+  const [info, setInfo] = useState(initialState.info);
 
   return (
-    <AppContext.Provider value={contextValue}>
+    <UseContext.Provider value={
+      { 
+        
+        info,
+        setInfo
+      }}>
       {children}
-    </AppContext.Provider>
-  )
-
-  
-  
+    </UseContext.Provider>
+  );
 }
-
-
-export default Provider;
 
 
