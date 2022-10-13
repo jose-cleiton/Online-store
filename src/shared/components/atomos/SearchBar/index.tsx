@@ -1,45 +1,26 @@
-import { useState } from "react";
-import { Input } from "../../../../interfaces/interfaces";
 
 
 
 
-export const  SearchBar  = () => 
+export const  SearchBar  = ({value , onChange}) => 
 {
-
-  // const [input, setInput] = useState<Input>({} as Input);
-  const [input, setInput] = useState<Input>("" as unknown as Input);
-  
-  
-  
-  const  handleChange  = (e: React.ChangeEvent<HTMLInputElement>) => 
-  {
     
-    const { value } = e.target;
-    if(!value) return;
-    
-    
-    const URL = `https://api.mercadolibre.com/sites/MLB/search?q=${value}`;
-    fetch(URL)
-    .then((response) => response.json()).then((data) => setInput(data))
 
-     
+    const handleInputChange = (event) => {
+      onChange(event.target.value);
+    }
 
-  };
-  console.log(input);
-  
-  return (
-    <div className="search-bar">
-      <input
-        type="text"
-        className="search-bar__input"
-        placeholder="Search"
-        onChange={handleChange}
-      />
-     
-    </div>
-  );
-
-  
-  
+    return (
+       
+       
+       <input 
+       type="search" 
+       value={value} 
+       onChange={handleInputChange} />
+       
+      
+        
+    )
+   
+   
 }

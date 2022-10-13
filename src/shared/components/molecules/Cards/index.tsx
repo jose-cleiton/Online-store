@@ -4,9 +4,10 @@ import { IQueriedRepositories } from '../../../../interfaces/interfaces';
 
 import Products from '../../product';
 import * as S from './styles';
-const query = 'brinquedo';
+import { URL } from '../../../../services/url';
+
   
-const URL =`https://api.mercadolibre.com/sites/MLB/search?q=${query}`;
+
 
 const Cards = () => {
 
