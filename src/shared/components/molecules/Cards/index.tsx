@@ -12,11 +12,12 @@ const Cards = () => {
 
 
 
+
 return (
     <S.Cards>  
         <ul>
             {info.map((item) => {
-                console.log(item);
+              
                 
                 return (
                     <li key={item.id}>

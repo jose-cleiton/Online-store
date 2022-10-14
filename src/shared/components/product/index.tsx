@@ -9,10 +9,16 @@ interface IProducts {
 
 
 const Products = (props: any) => 
-(
+
+{
+
+    console.log(props.item);
+    
+    return (
+
 <S.Div>  
    <header>
-      <img src={props.url} alt={props.title} title={props.title}/>
+      <img src={props.item.thumbnail} alt={props.item.title} title={props.item.title}/>
 
    </header>
     
@@ -20,20 +26,23 @@ const Products = (props: any) =>
     
     <main>
         <div className="title">
-            <h2>{props.title}</h2>
+            <h2>{props.item.title}</h2>
+
         </div>
         <div>
-            <span className="value">R$ {props.value}</span>
+            <span className="value">R$ {props.item.price}</span>
             <p>Frete grátis #full</p>
         </div>
     </main>
 </S.Div>
+    )
+    
 
 
        
    
 
-)
+}
 
 
   
