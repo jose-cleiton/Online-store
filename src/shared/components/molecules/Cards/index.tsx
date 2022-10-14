@@ -10,22 +10,17 @@ import * as S from './styles';
 const Cards = () => {
     const { info} = useContext(UseContext);
 
-
+   const renderProducts = () => {
+         return info.map((item) => <Products key={item.id} item={item}/>)
+   };
 
 
 return (
     <S.Cards>  
-        <ul>
-            {info.map((item) => {
-              
-                
-                return (
-                    <li key={item.id}>
-                        <Products item={item}/>
 
-                    </li>
-                )
-            })}
+        <ul>
+            
+            { info.length > 1 ? renderProducts() : <h1>Carregando...</h1>}
         </ul>
     </S.Cards>
 )

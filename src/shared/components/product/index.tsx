@@ -1,11 +1,6 @@
 
 import * as S from './styles';
 
-interface IProducts {
-    url: string;
-    title: string;
-    value: number;
-};
 
 
 const Products = (props: any) => 
