@@ -7,25 +7,23 @@ const Products = (props: any) =>
 
 {
 
-    console.log(props.item);
+    const { item } = props;
     
     return (
 
 <S.Div>  
    <header>
-      <img src={props.item.thumbnail} alt={props.item.title} title={props.item.title}/>
+      <img src={item.thumbnail} alt={item.title} title={item.title}/>
 
-   </header>
-    
-   
+   </header>   
     
     <main>
         <div className="title">
-            <h2>{props.item.title}</h2>
+            <h2>{item.title}</h2>
 
         </div>
         <div>
-            <span className="value">R$ {props.item.price}</span>
+            <span className="value">R$ {item.price}</span>
             <p>Frete grátis #full</p>
         </div>
     </main>

@@ -2,6 +2,8 @@ import axios from 'axios';
 
 
 
+
+
 export async function getCategories() {
 
       const URL =" https://api.mercadolibre.com/sites/MLB/categories"
@@ -22,3 +24,5 @@ export async function getProductsFromQuery(query:string) {
   const response = await axios.get(URL);
   return response.data;
 }
+
+
