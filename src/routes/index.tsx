@@ -1,5 +1,6 @@
 import { Navigate, Route, Routes } from "react-router-dom";
-import { Category } from "../shared/components/Category";
+import Category from "../shared/components/category/Category";
+
 import Section from "../shared/components/templates/Section";
 
 export const AppRoutes = () => 

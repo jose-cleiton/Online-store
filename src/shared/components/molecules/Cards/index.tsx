@@ -1,37 +1,35 @@
-import axios from 'axios';
-import { useQuery } from 'react-query';
-import { IQueriedRepositories } from '../../../../interfaces/interfaces';
 
-import Products from '../../atomos/img/product';
+import { useContext } from 'react';
+import { UseContext } from '../../../contexts/AppContext';
+import Products from '../../product';
 import * as S from './styles';
-const query = 'notbooks';
+
   
-const URL =`https://api.mercadolibre.com/sites/MLB/search?q=${query}`;
+
 
 const Cards = () => {
-const { data } = useQuery<IQueriedRepositories>('products', 
-        async () =>
-        {
-            const response = await axios.get(URL)
-            return response.data
-        });
+    const { info} = useContext(UseContext);
+
+
 
 return (
     <S.Cards>  
         <ul>
-            {data?.results.map((repository) => {
+            {info.map((item) => {
+                console.log(item);
+                
                 return (
-                    <li key={repository.id}>
-                        <Products url={repository.thumbnail} title={repository.title} value={repository.price}/>
+                    <li key={item.id}>
+                        <Products item={item}/>
+
                     </li>
                 )
-            }
-            )}
+            })}
         </ul>
     </S.Cards>
 )
 
+
 }
 
 export default Cards;
-     

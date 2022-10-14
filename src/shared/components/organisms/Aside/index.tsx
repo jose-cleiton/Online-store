@@ -1,9 +1,10 @@
 import * as S from './styles';
+import Category from '../../category/Category';
 
 const Aside = () => 
 (
     <S.Aside>
-        <h1>Aside</h1>
+        <Category/>
     </S.Aside>
 
 )

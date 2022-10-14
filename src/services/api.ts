@@ -11,16 +11,14 @@ export async function getCategories() {
   // Implemente aqui
 }
 
-export async function getProductsFromCategoryAndQuery(categoryId, query) {
+export async function getProductsFromCategoryAndQuery(categoryId:number, query:string) {
   const URL = `https://api.mercadolibre.com/sites/MLB/search?category=${categoryId}&q=${query}`
-  const headers = { Authorization: 'Bearer $ACCESS_TOKEN', method: 'GET' };
-  const response = await axios.get(URL, headers);
+  const response = await axios.get(URL);
   return response.data;
 }
 
-export async function getProductsFromQuery(query) {
-  const URL = `https://api.mercadolibre.com/sites/MLB/search?q=${query}`
-  const headers = { Authorization: 'Bearer $ACCESS_TOKEN', method: 'GET' };
-  const response = await axios.get(URL, headers);
+export async function getProductsFromQuery(query:string) {
+  const URL = `https://api.mercadolibre.com/sites/MLB/search?q=${query}`  
+  const response = await axios.get(URL);
   return response.data;
 }
