@@ -1,7 +1,8 @@
 // ./src/context/Provider.js
 
 import { useState } from "react";
-import { initialState, UserContextProps } from "../../interfaces/interfaces";
+import {  UserContextProps } from "../../interfaces/interfaces";
+import { initialState } from "../../services/initialStates";
 import { UseContext } from "./AppContext";
 
 

@@ -2,6 +2,7 @@
 import axios from 'axios';
 import { useQuery } from 'react-query';
 import { IQueriedRepositories } from '../interfaces/interfaces';
+import Products from '../shared/components/product';
 
 
      
@@ -17,38 +18,21 @@ import { IQueriedRepositories } from '../interfaces/interfaces';
         {
             const response = await axios.get(URL)
             return response.data
-        });
-        
-       
-        
+        });      
    
           
     
-    return (
-     
-        <>
-            <h1>Home</h1>
-
+    return ( 
             <ul>
                 {data?.results.map((repository) => {
                     return (
-                        <li key={repository.id}>
-                            <strong>{repository.title}</strong>
-                            <p>R${repository.price}</p>
-                            <img src={repository.thumbnail} alt={repository.title}/>
-                          
+                        <li key={repository.id}>                            
+                          <Products key={repository.id} item={repository}/> 
                         </li>
                     )
                 }
                 )}
             </ul>
-        </>
-    
-     
-         
-      
-      
-  
      )
 
 }
