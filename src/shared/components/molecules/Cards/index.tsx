@@ -11,7 +11,10 @@ import * as S from './styles';
   
 
 export const Cards = () => {
-    const { info} = useContext(UseContext);    
+    const { info} = useContext(UseContext);   
+
+     
+    
 return (
     <S.Cards> 
         <ul>            

@@ -25,3 +25,14 @@ export const initialState = {
 
   setInfo: () => {},
 };
+
+
+export   const research = () => {
+  
+      
+      if(localStorage.getItem('search') !== null) {
+         return localStorage.getItem('search') || '';
+       } else {
+          return 'celular';
+       }
+  }
