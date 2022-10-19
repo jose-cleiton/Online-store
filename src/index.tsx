@@ -4,9 +4,10 @@ import { QueryClientProvider } from 'react-query';
 
 import {App} from './App';
 
-import { queryClient } from './shared/services/queryClient';
+
 import GlobalStyle from './styles/global';
 import { UserContextProvider } from './shared/contexts/Provider';
+import { queryClient } from './services/queryClient';
 
 ReactDOM.render(
   <React.StrictMode>

@@ -6,7 +6,7 @@ export const  SearchBar  = ({value , onChange}) =>
 {
     
 
-    const handleInputChange = (event) => {
+    const handleInputChange = (event: { target: { value: any; }; }) => {
       onChange(event.target.value);
     }
 

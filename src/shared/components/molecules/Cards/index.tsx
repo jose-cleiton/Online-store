@@ -1,5 +1,6 @@
 
 import { useContext } from 'react';
+import Itens from '../../../../services/Itens';
 import { renderProducts } from '../../../../services/products';
 import { UseContext } from '../../../contexts/AppContext';
 import * as S from './styles';
@@ -17,7 +18,7 @@ return (
             { 
                 info.length > 1 
                 ? renderProducts(info) 
-                : <h1>Carregando...</h1>
+                : <Itens/>
             }
         </ul>
     </S.Cards>
