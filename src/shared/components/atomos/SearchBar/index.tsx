@@ -1,28 +1,40 @@
+import { useContext, useState } from "react";
+import { UseContext } from "../../../contexts/AppContext";
+import { URL } from '../../../../services/url';
 
 
-
-
-export const  SearchBar  = ({value , onChange}) => 
-{
+export const  SearchBar  = () => 
+{ 
+const{ setInfo} = useContext(UseContext); 
+const [search, setSearch] = useState('');
+const handleInputChange = (search) => {  
+fetch(`${URL}${search}`)
+ .then((response) => response
+ .json())
+ .then((data) => {
+    setInfo(data.results)
     
-
-    const handleInputChange = (event: { target: { value: any; }; }) => {
-      onChange(event.target.value);
-      localStorage.setItem('search', event.target.value);
-    }
+ })  
+  localStorage.setItem('search', search);
+}
 
     return (
-       
        <>
-       
        <input 
-       type="search" 
-       value={value} 
-       onChange={handleInputChange} /> 
-       
-      
-      
+       type="text"
+       value={search}
+       onChange={e => setSearch(e.target.value)}
+       />
+
+       <button
+       type="button"
+        onClick={e => handleInputChange(search)}
+        
+       > butao     
+       </button>
+ 
        </>
+     
         
     )
    

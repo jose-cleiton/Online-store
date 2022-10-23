@@ -9,6 +9,7 @@ import { UseContext } from "./AppContext";
 export const UserContextProvider = ({ children }:UserContextProps) => {
  
   const [info, setInfo] = useState(initialState.info);
+  
 
   return (
     <UseContext.Provider value={
