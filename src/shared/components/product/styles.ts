@@ -11,7 +11,7 @@ height: 520px;
 display: flex;
 flex-direction: column;
 justify-content: space-evenly;
-background-color: #fff;
+
 border-radius: 10px;
 
 

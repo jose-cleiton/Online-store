@@ -30,7 +30,6 @@ const Products = (props: any) =>
          
         </div>
         <div className='frete'>
-
             <p>Frete grátis #full</p>
         </div>
     </main>
@@ -42,8 +41,5 @@ const Products = (props: any) =>
        
    
 
-}
-
-
-  
+}  
 export default Products;
