@@ -6,15 +6,26 @@ export const Box = styled.header`
 background: #FFF159;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   
   grid-area: h;
+
+
 input {
   width: 600px;
+  height: 30px;
   padding: 10px;
-  border: 1px solid #000;
+
+ 
   border-radius: 5px;
   margin: 10px 0;
+ 
+  border: none;
+  outline: none;
+    
+    
+   
+  
 
 }
 

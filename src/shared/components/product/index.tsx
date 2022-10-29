@@ -11,9 +11,9 @@ const Products = (props: any) =>
     
     return (
 
-<S.Div>  
+<S.LI>  
    <header>
-      <img src={item.thumbnail} alt={item.title} title={item.title}/>
+      <img src={item.thumbnail} width='220' height='220' decoding='async' alt={item.title} title={item.title}/>
 
    </header>   
     
@@ -27,7 +27,7 @@ const Products = (props: any) =>
             <p>Frete grátis #full</p>
         </div>
     </main>
-</S.Div>
+</S.LI>
     )
     
 

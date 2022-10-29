@@ -10,9 +10,8 @@ const Header = () =>
 
     <S.Box>
       <Logo/>
-      <SearchBar 
-     
-      />
+      <SearchBar/>
+    
     
     </S.Box>
   

@@ -11,9 +11,12 @@ export const Cards = styled.div`
           width: 240px;
     }
 
-    ul 
+    ol 
     {
 
+          margin: 0;
+          padding: 0;
+          list-style-type: none;
           display: flex;
           flex-wrap: wrap;
           justify-content: space-around;
@@ -25,6 +28,8 @@ export const Cards = styled.div`
           li
         {
           
+          list-style: none;
+
           border-radius: 20px;
           margin-top: 10px;
           margin-bottom: 10px;

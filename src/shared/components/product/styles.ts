@@ -3,10 +3,10 @@ import styled from "styled-components";
 
 
 
-export const Div = styled.div`
+export const LI = styled.li`
 
 display: grid;
-width: 284px;
+width: 274px;
 height: 520px;
 display: flex;
 flex-direction: column;
@@ -17,7 +17,9 @@ border-radius: 10px;
 
 header 
 {
-  width: 284px;   
+  width: 274px;  
+ 
+  display: flex;
   border-bottom: 1px solid #0001; 
   margin-right: 20px;  
   
@@ -26,7 +28,9 @@ header
 }  
 
 main {
-  width: 284px;  
+  width: 274px; 
+ 
+  display: flex;
   margin-right: 20px;  
   background-color: #fff;
   padding: 20px;
