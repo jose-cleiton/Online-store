@@ -18,12 +18,19 @@ const Products = (props: any) =>
    </header>   
     
     <main>
-        <div className="title">
-            <h2>{item.title}</h2>
-
+        <h2 className='title'>{item.title}</h2>
+        <div className='price'>
+         
+         <span>{item
+         .price
+         .toLocaleString(
+            'pt-br',{style:'currency',currency:'BRL'}
+            )}
+        </span>
+         
         </div>
-        <div>
-            <span className="value">R$ {item.price}</span>
+        <div className='frete'>
+
             <p>Frete grátis #full</p>
         </div>
     </main>

@@ -28,17 +28,23 @@ header
 }  
 
 main {
-  width: 274px; 
- 
-  display: flex;
+  width: 274px;
+  height: 294px;   
   margin-right: 20px;  
   background-color: #fff;
-  padding: 20px;
+  padding: 10px;
 
-  .title{
-    padding-bottom: 10px;
-  }
-
+ .title {
+  font-family: Proxima Nova,-apple-system,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+  font-size: 14px;
+  padding-top: 10px;
+ }
+.price {
+  padding-top: 50px;
+}
+.frete {
+  padding-top: 60px;
+}
 
 }
 
