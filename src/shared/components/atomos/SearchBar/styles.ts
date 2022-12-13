@@ -10,9 +10,10 @@ export const  Search = styled.div`
   
  button {
   
-  font-size: 1.5rem;
-  padding: 0.5rem;
+    font-size: 1.5rem;
+    padding: 0.5rem;
     border-radius: 4px;
+    cursor: pointer;
  }
 
 

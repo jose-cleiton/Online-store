@@ -5,39 +5,39 @@ import { FaSearch } from 'react-icons/fa';
 import * as S from './styles';
 export const  SearchBar  = () => 
 { 
-const{ setInfo} = useContext(UseContext); 
-const [search, setSearch] = useState('');
-const handleInputChange = (search: string) => {  
-fetch(`${URL}${search}`)
- .then((response) => response
- .json())
- .then((data) => {
-    setInfo(data.results)
-    
- })  
+      const{ setInfo} = useContext(UseContext); 
+      const [search, setSearch] = useState('');
+      const handleInputChange = (search: string) => {  
+      fetch(`${URL}${search}`)
+      .then((response) => response
+      .json())
+      .then((data) => {
+         setInfo(data.results)
+         
+      })  
 
-  localStorage.setItem('search', search);
-}
+      localStorage.setItem('search', search);
+      }
 
-    return (
+         return (
+            
+            <S.Search>
+            <input 
+            type="text"
+            value={search}
+            onChange={e => setSearch(e.target.value)}
+            />
+
+            <button
+            type="button"
+            onClick={e => handleInputChange(search)}        
+            ><FaSearch/>
+            </button>
       
-       <S.Search>
-       <input 
-       type="text"
-       value={search}
-       onChange={e => setSearch(e.target.value)}
-       />
-
-       <button
-       type="button"
-        onClick={e => handleInputChange(search)}        
-       ><FaSearch/>
-       </button>
- 
-       </S.Search>
-     
-        
-    )
+            </S.Search>
+         
+            
+         )
    
    
 }
