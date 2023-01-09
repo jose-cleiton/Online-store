@@ -1,3 +1,5 @@
+import { ReactNode } from "react";
+
 export interface ISeller {
   id: number;
   permalink: string;
@@ -263,5 +265,62 @@ available_filters: [
 
 
 }
+
+export interface  ICategory {
+    id: string;
+    name: string;
+}
+
+export interface IProduct {
+
+
+    
+    id: string;
+    title: string;
+    price: {
+        currency: string;
+        amount: number;
+        decimals: number;
+
+    };
+    picture: string;
+    condition: string;
+    free_shipping: boolean;
+    state_name: string;
+
+}
+
+export type UserContextType = {   
+  
+    info: IProduct[]
+    setInfo: React.Dispatch<React.SetStateAction<IProduct[]>>,
+      
+    
+}
+
+
+
+//  export  type UserThemeContextType = {
+//     theme: boolean;
+//     setTheme: React.Dispatch<React.SetStateAction<boolean>>,
+//   }
+//   export const initialValue = {
+//     theme: true,
+//     setTheme: () => {}
+//   }
+
+
+
+
+
+
+export type UserContextProps = {
+    children: ReactNode;
+  };
+
+
+
+
+
 
 
