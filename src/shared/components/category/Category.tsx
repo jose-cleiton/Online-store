@@ -1,6 +1,8 @@
-import { useQuery } from "react-query"
-import { getCategories } from "../../../services/api";
+import API from "../../../services/api";
 import { Link } from 'react-router-dom';
+import { useCategory } from "../../../services/useCategory";
+
+const apiService = new API();
 
 
 interface  ICategory {
@@ -10,12 +12,9 @@ interface  ICategory {
 
  const Category = () => 
 {
-  const {data,  isFetching} = useQuery('category',  () => 
-  {
-      const response =  getCategories()
-      return response
-  } 
-  )
+    const { data, isFetching } = useCategory();
+
+  
    return (
          <>
             <h1>Category</h1>
