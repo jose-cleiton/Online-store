@@ -2,7 +2,7 @@ import axios from 'axios';
 import { useQuery } from 'react-query';
 import { IQueriedRepositories } from '../interfaces/interfaces';
 import Products from '../shared/components/product';
-import { research } from './initialStates';
+import { research } from '../interfaces/interfaces';
 
 const Itens = () => {
       const URL =`https://api.mercadolibre.com/sites/MLB/search?q=${research()}`;

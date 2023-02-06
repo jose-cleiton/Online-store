@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import {  UserContextProps } from "../../interfaces/interfaces";
-import { initialState } from "../../services/initialStates";
+import { initialState } from '../../interfaces/interfaces';
 import { UseContext } from "./AppContext";
 
 

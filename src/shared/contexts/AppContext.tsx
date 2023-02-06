@@ -1,7 +1,7 @@
 // ./src/context/AppContext.js
 import { createContext } from 'react';
 import {UserContextType } from '../../interfaces/interfaces';
-import { initialState } from '../../services/initialStates';
+import { initialState } from '../../interfaces/interfaces';
 
 
 

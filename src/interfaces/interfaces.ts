@@ -8,6 +8,12 @@ export interface ISeller {
 
 }
 
+export interface  ICategory {
+    id: string;
+    name: string;
+}
+
+
 export  interface IResults {
   price: number;
   id: string;
@@ -300,17 +306,6 @@ export type UserContextType = {
 
 
 
-//  export  type UserThemeContextType = {
-//     theme: boolean;
-//     setTheme: React.Dispatch<React.SetStateAction<boolean>>,
-//   }
-//   export const initialValue = {
-//     theme: true,
-//     setTheme: () => {}
-//   }
-
-
-
 
 
 
@@ -318,6 +313,46 @@ export type UserContextProps = {
     children: ReactNode;
   };
 
+
+  // initial states
+  const obj = {
+
+
+    
+    id:'',
+    title: '',
+    price: {
+        currency: '',
+        amount: 0,
+        decimals: 0,
+  
+    },
+    picture: '',
+    condition: '',
+    free_shipping: false,
+    state_name: ''
+  
+  }
+  
+  
+  
+  export const initialState = {
+   
+    info: [obj],    
+  
+    setInfo: () => {},
+  };
+  
+  
+  export   const research = () => {
+    
+        
+        if(localStorage.getItem('search') !== null) {
+           return localStorage.getItem('search') || '';
+         } else {
+            return 'celular';
+         }
+    }
 
 
 
