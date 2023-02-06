@@ -1,17 +1,12 @@
 import { useQuery } from "react-query"
 import { Link } from 'react-router-dom';
 import { ICategory } from "../../../interfaces/interfaces";
-import MercadoLivreAPI from "../../../services/api"
+import useCategories from "../../../services/useCategories";
 
 
  const Category = () => 
 {
-  const {data,  isFetching} = useQuery('category',  () => 
-  {
-      const response =  MercadoLivreAPI.getCategories()
-      return response
-  } 
-  )
+    const { data, isFetching } = useCategories();
    return (
          <>
             <h1>Category</h1>
