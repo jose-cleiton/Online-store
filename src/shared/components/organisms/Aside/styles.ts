@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const Aside = styled.aside`
 
-background: #FFF;
+background: #fff15a;
 overflow: hidden;
 overflow-y: scroll;
   
