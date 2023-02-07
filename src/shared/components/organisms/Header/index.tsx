@@ -8,13 +8,15 @@ const Header = () =>
 
   return(
 
-    <S.Box>
-      <Logo/>
-      <SearchBar/>
-    
-    
-    </S.Box>
+      
+  <S.Head >
+    <Logo/>
+    <SearchBar/>   
   
+  </S.Head>
+
+
+
   
   )
 

@@ -9,18 +9,24 @@ import * as S from './styles';
 const Section = ({children}:FrontendProps) => 
 {
     return (
+        <>
         
+                <Header />
+                
+                                  
+        <div className="container">
             
         <S.Section>
-            
-            <Header/>            
-            <Main/>
-            <Aside/>
-            <Footer/>
+                <Main/>
+                <Aside/>
+                <Footer/>
             
 
         </S.Section>
         
+            </div>
+
+        </>
     )
 };
 

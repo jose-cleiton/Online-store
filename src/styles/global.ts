@@ -7,6 +7,14 @@ const GlobalStyle = createGlobalStyle
   padding: 0;
   box-sizing: border-box;
 }
+.center-box {
+  width: 1200px;
+  height: 37px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 html {
   min-height: 100%;
   background: var(--color-primary);

@@ -1,4 +1,3 @@
-import { useQuery } from "react-query"
 import { Link } from 'react-router-dom';
 import { ICategory } from "../../../interfaces/interfaces";
 import useCategories from "../../../services/useCategories";

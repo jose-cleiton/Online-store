@@ -1,34 +1,23 @@
 import styled from "styled-components";
 
 
-export const Box = styled.header`
-
-background: #FFF159;
+export const Head = styled.header`
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 92px;
+  background: #FFF159;
   display: flex;
   align-items: center;
-  justify-content: center;
-  
-  grid-area: h;
-
-
-input {
-  width: 600px;
-  height: 30px;
-  padding: 10px;
-
- 
-  border-radius: 5px;
-  margin: 10px 0;
- 
-  border: none;
-  outline: none;
+  justify-content: space-around;
+  padding: 0 75px;
     
-    
-   
-  
-
-}
-
-
-
+    input {
+      width: 500px;
+      height: 29px;    
+     
+      border: none;
+      outline: none;
+    }
 `;
