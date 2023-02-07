@@ -23,14 +23,17 @@ export const Head = styled.header`
       border: none;
       outline: none;
     }
+    
+
+
 `;
 
-const HeaderWrapper = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 92px;
-  background: #FFF159;
-  z-index: 1;
+export const HeaderWrapper = styled.div`
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   background-color: #FFF159;
+   height: 92px;
+   z-index: 1;
 `;
