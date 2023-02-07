@@ -1,5 +1,6 @@
 import { SearchBar } from '../../atomos/SearchBar';
-import Logo from '../../molecules/Logo';
+import { Discount, Logo } from '../../molecules/Logo';
+
 import * as S from './styles';
 
 const Header = () => 
@@ -11,8 +12,8 @@ const Header = () =>
       
   <S.Head >
     <Logo/>
-    <SearchBar/>   
-  
+    <SearchBar />
+    <Discount/>    
   </S.Head>
 
 
