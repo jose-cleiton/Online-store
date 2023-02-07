@@ -8,11 +8,10 @@ export const AppRoutes = () =>
 {
     return (
         <Routes>
-            <Route path="/" element={<Section children={undefined} />} />
-            <Route path="/shopping-cart" element={<ShoppingCartPage/>} />
-
-            <Route path="/cart" element={<Category/>}/>
-            <Route path="*" element={<Navigate to="/" replace={true}/>}/>
+            <Route path="/" element={<Section />} />
+            <Route path="/shopping-cart" element={<ShoppingCartPage />} />
+            <Route path="/cart" element={<Category />} />
+            <Route path="*" element={<Navigate to="/" replace={true} />} />
         </Routes>
     );
 };
