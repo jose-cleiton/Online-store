@@ -10,17 +10,16 @@ const Header = () =>
 
   return(
 
-      <>
       
-    <S.Head >
       
+  <S.Head >      
     <Logo/>
     <SearchBar />
-      <Discount /> 
+    <Discount /> 
   </S.Head>
      
 
-</>
+
 
   
   )

@@ -14,15 +14,6 @@ padding: 0 20px 0;
     
 
  
-  input {
-    width: 539px;
-   
-   
-    border-radius: 2px;
-    background-color: #fff;
-    border: none;
-    outline: none;
-  }
   
     
 

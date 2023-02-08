@@ -16,8 +16,7 @@ const Section: FC<SectionProps> = () => {
             <HeaderWrapper>
                 <div className="container">                
                     <Header />
-                    <MenuPrincipal/>
-                    
+                    <MenuPrincipal/>                   
 
                 </div>  
             </HeaderWrapper>
