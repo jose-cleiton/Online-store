@@ -9,24 +9,12 @@ const Header = () =>
  
 
   return(
-
-      
-      
   <S.Head >      
     <Logo/>
     <SearchBar />
     <Discount /> 
   </S.Head>
-     
-
-
-
-  
-  )
-
-
+)
 }
-
-
-  
+ 
 export default Header;
