@@ -1,12 +1,23 @@
-import LogoHero from  './logo-mercado-livre.jpg'
+import LogoHero from  './Mercado-Livre-logo-1-1-1024x288.png'
+import DiscountImage from  './D_NQ_787363-MLA52331566787_112022-OO.webp'
 
-const Logo = () => 
+export const Logo = () => 
 {
     return (
         <div className="logo">
-          <img src={LogoHero} width="100" height="50" alt="Logo Mercado Pago" />
+          <img src={LogoHero}  width = "134" height="34" alt="Logo Mercado Pago" />
         </div>
     );
 }
 
-export default Logo;
+
+
+
+export  const Discount = () => 
+{
+    return (
+        <div className="discount">
+          <img src={DiscountImage}  width = "340" height="39" alt="Discount Image" />
+        </div>
+    );
+}

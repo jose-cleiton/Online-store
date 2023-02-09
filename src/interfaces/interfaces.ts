@@ -1,3 +1,5 @@
+import { ReactNode } from "react";
+
 export interface ISeller {
   id: number;
   permalink: string;
@@ -5,6 +7,12 @@ export interface ISeller {
 
 
 }
+
+export interface  ICategory {
+    id: string;
+    name: string;
+}
+
 
 export  interface IResults {
   price: number;
@@ -263,5 +271,91 @@ available_filters: [
 
 
 }
+
+export interface  ICategory {
+    id: string;
+    name: string;
+}
+
+export interface IProduct {
+
+
+    
+    id: string;
+    title: string;
+    price: {
+        currency: string;
+        amount: number;
+        decimals: number;
+
+    };
+    picture: string;
+    condition: string;
+    free_shipping: boolean;
+    state_name: string;
+
+}
+
+export type UserContextType = {   
+  
+    info: IProduct[]
+    setInfo: React.Dispatch<React.SetStateAction<IProduct[]>>,
+      
+    
+}
+
+
+
+
+
+
+export type UserContextProps = {
+    children: ReactNode;
+  };
+
+
+  // initial states
+  const obj = {
+
+
+    
+    id:'',
+    title: '',
+    price: {
+        currency: '',
+        amount: 0,
+        decimals: 0,
+  
+    },
+    picture: '',
+    condition: '',
+    free_shipping: false,
+    state_name: ''
+  
+  }
+  
+  
+  
+  export const initialState = {
+   
+    info: [obj],    
+  
+    setInfo: () => {},
+  };
+  
+  
+  export   const research = () => {
+    
+        
+        if(localStorage.getItem('search') !== null) {
+           return localStorage.getItem('search') || '';
+         } else {
+            return 'celular';
+         }
+    }
+
+
+
+
 
 

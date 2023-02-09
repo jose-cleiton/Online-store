@@ -7,6 +7,14 @@ const GlobalStyle = createGlobalStyle
   padding: 0;
   box-sizing: border-box;
 }
+.center-box {
+  width: 1200px;
+  height: 37px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 html {
   min-height: 100%;
   background: var(--color-primary);
@@ -18,7 +26,9 @@ h1, h2, h3, h4, h5, h6 {
   border: 0;
   background: none;
   font-family: 'Montserrat', -apple-system,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+  
 }
+
 :root {
   --color-primary: #F5F5F5;
   --color-black: #333;

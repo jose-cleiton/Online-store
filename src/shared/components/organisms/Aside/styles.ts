@@ -3,11 +3,11 @@ import styled from "styled-components";
 
 export const Aside = styled.aside`
 
-background: #FFF;
-  overflow: hidden;
-  overflow-y: scroll;
+background: #ffffff;
+overflow: hidden;
+overflow-y: scroll;
   
-  grid-area: a;
+grid-area: a;
 
 
  h1 {

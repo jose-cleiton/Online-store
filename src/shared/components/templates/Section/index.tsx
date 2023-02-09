@@ -1,27 +1,34 @@
-import { FrontendProps } from "../../../../interfaces/interfaces";
-import Aside from "../../organisms/Aside";
+import { FC } from "react";
 import Footer from "../../organisms/Footer";
 import Header from "../../organisms/Header";
+import MenuPrincipal from "../../organisms/Header/menu/MenuPrincipal";
+
+import { HeaderWrapper } from "../../organisms/Header/styles";
 import Main from "../../organisms/Main";
-import * as S from './styles';
+import * as S from "./styles";
+interface SectionProps {
+  // Propriedades aqui, caso necessário
+}
 
-
-const Section = ({children}:FrontendProps) => 
-{
+const Section: FC<SectionProps> = () => {
     return (
-        
-            
-        <S.Section>
-            
-            <Header/>            
-            <Main/>
-            <Aside/>
-            <Footer/>
-            
+        <>
+            <HeaderWrapper>
+                <div className="container">                
+                    <Header />
+                    <MenuPrincipal/>                   
 
-        </S.Section>
-        
-    )
+                </div>  
+            </HeaderWrapper>
+            <div className="container">
+                <S.SectionWrapper>
+                    <Main />
+                    <Footer />
+                </S.SectionWrapper>
+            </div>
+        </>       
+  );
 };
+
 
 export default Section;

@@ -1,14 +1,14 @@
 import styled from "styled-components";
 
 
-export const Section = styled.section`
+export const SectionWrapper = styled.section`
 
 display: grid;
-grid-template-columns: 1fr 4fr;
+
 grid-template-rows: 10vh 80vh 10vh;
-grid-template-areas: "h h" 
-                     "a m" 
-                     "f f";
+grid-template-areas: "h" 
+                     "m" 
+                     "f";
                      
 
 `;
