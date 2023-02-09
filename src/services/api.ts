@@ -18,6 +18,11 @@ class MercadoLivreAPI {
     const response = await axios.get(URL);
     return response.data;
   }
+  async getProductsByCategory(categoryId: number) {
+    const URL = `https://api.mercadolibre.com/sites/MLB/search?category=${categoryId}`;
+    const response = await axios.get(URL);
+    return response.data;
+  }
 }
 
 export default new MercadoLivreAPI();
